@@ -153,6 +153,7 @@ $modal.css("display","block");
 $modalBg.css("z-index","9999");
 $modalBg.find(".modal_content").hide().fadeIn("slow");
 })
+
 $modalClose.on("click",function(){
   $('div.modal_background .modal_content').children('p').text(' ');
   $modalBg.find(".modal_content").fadeOut("slow").css("z-index","unset");
@@ -163,15 +164,6 @@ $modalClose.on("click",function(){
   $("#my_form").children('input')[1].value= ' ';
   $("#my_form").children('textarea')[0].value= ' ';
 })
-
-$(".submit").on("click",function(e){
-  e.preventDefault();
-  $(".modal_logo").css("marginBottom","70px");
-  $("#my_form").hide();
-  $('div.modal_background .modal_content').append('<p>Your message was sent</p>').css('fontWeight','bold');
-})
-
-
 
 $(window).scroll(function(){
 if($(window).width() > 768){
