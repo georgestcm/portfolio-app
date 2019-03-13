@@ -26,9 +26,47 @@ body {
 }
 
 .landing_parent {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-color: white;
+}
+
+.landing_parent .landing_background {
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.landing_parent .landing_background .first_half {
+  width: 50%;
+  height: 100%;
+  background-color: #202124;
+  float: left;
+}
+
+.landing_parent .landing_background .second_half {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  float: right;
+}
+
+.landing_parent .landing_background .landing_info {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 55%;
+  width: 50%;
+  position: absolute;
+  top: 24%;
+  left: 24%;
+}
+
+.landing_parent .nav_parent {
+  position: fixed;
+  width: 100%;
 }
 
 .landing_parent .nav_parent ul {
@@ -308,6 +346,14 @@ div.main_page div.nav nav .site_logo {
 div.main_page div.nav nav .site_logo img {
   height: 30px;
   margin: 17px 0 0 30px;
+}
+
+div.main_page div.nav nav .programmer {
+  display: inline-block;
+}
+
+div.main_page div.nav nav .programmer i {
+  color: white;
 }
 
 div.main_page div.nav nav .links {
