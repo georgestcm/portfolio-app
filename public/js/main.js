@@ -26,6 +26,7 @@ var $projectList = $(".project_ul li");
 var $projectHoverDiv = $(".pro_info");
 var $projectRuth = $(".ruth");
 var $techSkills = $(".tech");
+var $programLogo = $('.fa-laptop-code').hide();
 var $socialMediaTwo = $('div.social_media').clone();
 $("div.down_arrow img").hide();
 $mainPage.append($socialMediaTwo);
@@ -203,7 +204,7 @@ $projectList.hover(function(){
 
  $('.title').typeIt({
    strings: '',
-   speed: 170,
+   speed: 180,
    deleteSpeed: undefined,
    lifeLike: false,
    cursor: true,
@@ -233,7 +234,12 @@ $('div.scrollPercentage').animate({
   } else {
     $("div.down_arrow img").fadeOut("fast");
   }
-  });
+
+  if(percent === 0+"%"){
+    $programLogo.hide();
+  } else {
+    $programLogo.fadeIn('slow')
+  }
 
 $("div.down_arrow img").on("click",function(){
 if($(window).width() > 768){
@@ -243,4 +249,5 @@ if($(window).width() > 768){
 }
 })
 
+})
 })
