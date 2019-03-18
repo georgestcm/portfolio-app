@@ -25,6 +25,7 @@ var $projectSection = $(".project");
 var $projectList = $(".project_ul li");
 var $projectHoverDiv = $(".pro_info");
 var $projectRuth = $(".ruth");
+var $arrows = $('i.arrow');
 var $techSkills = $(".tech");
 var $programLogo = $('.fa-laptop-code').hide();
 var $socialMediaTwo = $('div.social_media').clone();
@@ -250,4 +251,23 @@ if($(window).width() > 768){
 })
 
 })
+
+/////////////////////////////////
+//////////////////////////////////
+///////////////////////////////////
+//////////////////////////////////
+//arrows code sections !!!!important!!!
+$arrows.hover(function(){
+  $(this).animate({
+    fontSize: "+=3px"
+  })
+},function(){
+  $(this).animate({
+    fontSize: "-=3px"
+  })
+})
+
+
+
+
 })
