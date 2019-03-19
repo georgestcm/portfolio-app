@@ -1,7 +1,16 @@
+
 $main_color: #22776A;
 
 html {
   font-family: 'PT Sans', sans-serif;
+}
+.addAnimation {
+  transition: 1s !important;
+  cursor: pointer  !important;
+  &:hover {
+    transition: 1s  !important;
+    color: #202124  !important;
+  }
 }
 
 .fixed {
@@ -45,6 +54,74 @@ body {
       height: 100%;
       background-color: white;
       float: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .jquery {
+        img {
+        height: 50px;
+        }
+      }
+      .main_tech{
+        a {
+          font-size: 50px;
+          text-decoration: none;
+        }
+
+        &:nth-child(1){
+          a {
+            margin-left: 43%;
+            color: #F06529;
+          }
+        }
+        &:nth-child(2){
+          a {
+            margin-left: 52%;
+            color: #002561;
+          }
+        }
+        &:nth-child(3){
+          a {
+            margin-left: 59%;
+            color: #c6538c;
+          }
+        }
+        &:nth-child(4){
+          a {
+            margin-left: 66%;
+            color: #f3df49;
+          }
+        }
+        &:nth-child(5){
+          img {
+            margin-left: 69%;
+          }
+        }
+        &:nth-child(6){
+          a {
+            margin-left: 66%;
+            color:#00d8ff;
+          }
+        }
+        &:nth-child(7){
+          a {
+            margin-left: 58%;
+            color: #44883e;
+          }
+        }
+        &:nth-child(8){
+          a {
+            margin-left: 55%;
+            color: #00758F;
+          }
+        }
+        &:nth-child(9){
+          a {
+            margin-left: 45%;
+            color: #F1502F;
+          }
+        }
+      }
     }
     .landing_info {
       background-color: white;
@@ -55,6 +132,96 @@ body {
       position: absolute;
       top: 24%;
       left: 24%;
+      .timer_wrapper {
+        width: 100%;
+        height: 20px;
+        p {
+          box-sizing: border-box;
+          height: 23px;
+          width: 23px;
+          text-align: center;
+          background-color: white;
+          margin: 3px 0 0 3px;
+          padding: 2px;
+          border-radius: 50%;
+          border: 2px solid grey;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+          color: grey;
+          font-weight: bold;
+        }
+      }
+      div.personal {
+        height: 150px;
+        width: 100%;
+        .personal_photo{
+          float: left;
+          box-sizing: border-box;
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 7%;
+          background-color: blue;
+          border: 2px solid grey;
+          img {
+            border-radius: 50%;
+          }
+        }
+        .personal_title {
+          float: right;
+          box-sizing: border-box;
+          height: 100%;
+          width: 65%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            float: left;
+            font-size: 39px;
+            font-family: 'VT323', monospace;
+            text-align: center;
+          }
+        }
+      }
+      div.arrows {
+        background-color: blue;
+        width: 100%;
+        .right {
+          display: inline-block;
+          float: right;
+          i {
+            margin: 0 15px 0 0;
+            font-size: 28px;
+            color: $main_color;
+            transition: 1s;
+            cursor: pointer;
+            &:hover {
+              transition: 1s;
+              color: #202124;
+            }
+          }
+        }
+        .left {
+          display: inline-block;
+          float: left;
+          i {
+            margin: 0 0 0 15px;
+            font-size: 28px;
+            color: $main_color;
+            transition: 1s;
+            cursor: pointer;
+            &:hover {
+              transition: 1s;
+              color:#202124;
+            }
+          }
+        }
+      }
     }
   }
   height: 100vh;
@@ -302,6 +469,7 @@ div.main_page {
     height: 60px;
     nav {
       height: inherit;
+      display: flex;
       .site_logo {
         display: inline-block;
         img {
@@ -312,8 +480,14 @@ div.main_page {
       }
       .programmer {
         display: inline-block;
+        margin-left: 43%;
+        margin-right: auto;
         i {
           color: white;
+          margin-top: 13px;
+          padding: 6px;
+          border-radius: 50%;
+          background-color: $main_color;
         }
       }
       .links {

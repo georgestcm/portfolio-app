@@ -2,6 +2,16 @@ html {
   font-family: 'PT Sans', sans-serif;
 }
 
+.addAnimation {
+  transition: 1s !important;
+  cursor: pointer  !important;
+}
+
+.addAnimation:hover {
+  transition: 1s  !important;
+  color: #202124  !important;
+}
+
 .fixed {
   position: fixed !important;
   top: 0;
@@ -51,6 +61,62 @@ body {
   height: 100%;
   background-color: white;
   float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing_parent .landing_background .second_half .jquery img {
+  height: 50px;
+}
+
+.landing_parent .landing_background .second_half .main_tech a {
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.landing_parent .landing_background .second_half .main_tech:nth-child(1) a {
+  margin-left: 43%;
+  color: #F06529;
+}
+
+.landing_parent .landing_background .second_half .main_tech:nth-child(2) a {
+  margin-left: 52%;
+  color: #002561;
+}
+
+.landing_parent .landing_background .second_half .main_tech:nth-child(3) a {
+  margin-left: 59%;
+  color: #c6538c;
+}
+
+.landing_parent .landing_background .second_half .main_tech:nth-child(4) a {
+  margin-left: 66%;
+  color: #f3df49;
+}
+
+.landing_parent .landing_background .second_half .main_tech:nth-child(5) img {
+  margin-left: 69%;
+}
+
+.landing_parent .landing_background .second_half .main_tech:nth-child(6) a {
+  margin-left: 66%;
+  color: #00d8ff;
+}
+
+.landing_parent .landing_background .second_half .main_tech:nth-child(7) a {
+  margin-left: 58%;
+  color: #44883e;
+}
+
+.landing_parent .landing_background .second_half .main_tech:nth-child(8) a {
+  margin-left: 55%;
+  color: #00758F;
+}
+
+.landing_parent .landing_background .second_half .main_tech:nth-child(9) a {
+  margin-left: 45%;
+  color: #F1502F;
 }
 
 .landing_parent .landing_background .landing_info {
@@ -62,6 +128,110 @@ body {
   position: absolute;
   top: 24%;
   left: 24%;
+}
+
+.landing_parent .landing_background .landing_info .timer_wrapper {
+  width: 100%;
+  height: 20px;
+}
+
+.landing_parent .landing_background .landing_info .timer_wrapper p {
+  box-sizing: border-box;
+  height: 23px;
+  width: 23px;
+  text-align: center;
+  background-color: white;
+  margin: 3px 0 0 3px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: grey;
+  font-weight: bold;
+}
+
+.landing_parent .landing_background .landing_info div.personal {
+  height: 150px;
+  width: 100%;
+}
+
+.landing_parent .landing_background .landing_info div.personal .personal_photo {
+  float: left;
+  box-sizing: border-box;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7%;
+  background-color: blue;
+  border: 2px solid grey;
+}
+
+.landing_parent .landing_background .landing_info div.personal .personal_photo img {
+  border-radius: 50%;
+}
+
+.landing_parent .landing_background .landing_info div.personal .personal_title {
+  float: right;
+  box-sizing: border-box;
+  height: 100%;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing_parent .landing_background .landing_info div.personal .personal_title p {
+  float: left;
+  font-size: 39px;
+  font-family: 'VT323', monospace;
+  text-align: center;
+}
+
+.landing_parent .landing_background .landing_info div.arrows {
+  background-color: blue;
+  width: 100%;
+}
+
+.landing_parent .landing_background .landing_info div.arrows .right {
+  display: inline-block;
+  float: right;
+}
+
+.landing_parent .landing_background .landing_info div.arrows .right i {
+  margin: 0 15px 0 0;
+  font-size: 28px;
+  color: #22776A;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.landing_parent .landing_background .landing_info div.arrows .right i:hover {
+  transition: 1s;
+  color: #202124;
+}
+
+.landing_parent .landing_background .landing_info div.arrows .left {
+  display: inline-block;
+  float: left;
+}
+
+.landing_parent .landing_background .landing_info div.arrows .left i {
+  margin: 0 0 0 15px;
+  font-size: 28px;
+  color: #22776A;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.landing_parent .landing_background .landing_info div.arrows .left i:hover {
+  transition: 1s;
+  color: #202124;
 }
 
 .landing_parent .nav_parent {
@@ -337,6 +507,7 @@ div.main_page div.nav {
 
 div.main_page div.nav nav {
   height: inherit;
+  display: flex;
 }
 
 div.main_page div.nav nav .site_logo {
@@ -350,10 +521,16 @@ div.main_page div.nav nav .site_logo img {
 
 div.main_page div.nav nav .programmer {
   display: inline-block;
+  margin-left: 43%;
+  margin-right: auto;
 }
 
 div.main_page div.nav nav .programmer i {
   color: white;
+  margin-top: 13px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #22776A;
 }
 
 div.main_page div.nav nav .links {
