@@ -26,6 +26,9 @@ var $projectList = $(".project_ul li");
 var $projectHoverDiv = $(".pro_info");
 var $projectRuth = $(".ruth");
 var $arrows = $('i.arrow');
+var $arrowLeft = $('.fa-arrow-circle-left');
+var $arrowRight = $('.fa-arrow-circle-right')
+var $jobTitle = $('.title').hide();
 var $techSkills = $(".tech");
 var $programLogo = $('.fa-laptop-code').hide();
 var $socialMediaTwo = $('div.social_media').clone();
@@ -205,7 +208,7 @@ $projectList.hover(function(){
 
  $('.title').typeIt({
    strings: '',
-   speed: 180,
+   speed: 100,
    deleteSpeed: undefined,
    lifeLike: false,
    cursor: true,
@@ -218,6 +221,8 @@ $projectList.hover(function(){
    autoStart: true,
    callback: function(){}
  });
+
+$jobTitle.fadeIn('slow');
 
    $(window).on('scroll', function() {
     var scrollTop = $(window).scrollTop();
@@ -252,22 +257,153 @@ if($(window).width() > 768){
 
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /////////////////////////////////
 //////////////////////////////////
 ///////////////////////////////////
 //////////////////////////////////
 //arrows code sections !!!!important!!!
-$arrows.hover(function(){
-  $(this).animate({
-    fontSize: "+=3px"
+
+
+
+
+
+
+
+
+
+
+
+var landing_info_position = $('div.landing_info').offset().left / $(window).width()*100+'%';
+console.log(landing_info_position);
+console.log($(window).width());
+function checkPosition(el){
+if((el.offset().left / $(window).width()*100+'%') === landing_info_position){
+  return true
+} else {
+  return false
+}
+}
+
+var timer = 30;
+function countDown(){
+   if(timer < 31 && timer > 0){
+     timer--;
+     $('p.timer').text(timer).css({
+       "color":"#d60808"
+     });
+   } else {
+       //positionReset($('div.landing_info'),$('div.first_half'),$('div.second_half'));
+}
+}
+var counter = ()=>{
+  setInterval(countDown,1000);
+}
+
+function positionReset(landing,left,right){
+  if(checkPosition(landing)){
+    console.log('its true')
+  } else{
+  landing.animate({
+    left: "24%"
+  },()=>{
+    left.animate({
+      width: '50%'
+    })
+    right.animate({
+      width: '50%'
+    })
+  })}
+
+  $arrowRight.css({
+    "pointer-events": "initial",
+    "color": "#22776A"
+  }).addClass('addAnimation')
+  $arrowLeft.css({
+    "pointer-events": "initial",
+    "color": "#22776A"
+  }).addClass('addAnimation')
+
+  $('p.timer').css({
+    "color":"grey"
+  }).text("0");
+
+}
+
+
+  $arrowLeft.click(()=>{
+    console.log('clicked left')
+if(checkPosition($('div.landing_info'))){
+  $('div.landing_info').animate({
+    left: '13%'
+  },()=>{
+    $('div.first_half').animate({
+      width: '39%'
+    })
+    $('div.second_half').animate({
+      width:'61%'
+    })
   })
-},function(){
-  $(this).animate({
-    fontSize: "-=3px"
+  $arrowLeft.css({
+    "pointer-events": "none",
+    "color": 'grey'
   })
+  counter();
+} else {
+  positionReset($('div.landing_info'),$('div.first_half'),$('div.second_half'));
+}
+  })
+
+
+$arrowRight.click(()=>{
+  console.log('clicked right')
+    if(checkPosition($('div.landing_info'))){
+      $('div.landing_info').animate({
+        left: '35%'
+      },()=>{
+        $('div.first_half').animate({
+          width: '61%'
+        },()=>{
+          $('div.second_half').animate({
+            width:'39%'
+        })
+      })
+    })
+    $arrowRight.css({
+      "pointer-events": "none",
+      "color": 'grey'
+    })
+    counter();
+  } else {
+    positionReset($('div.landing_info'),$('div.first_half'),$('div.second_half'));
+  }
 })
-
-
 
 
 })
