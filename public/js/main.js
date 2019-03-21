@@ -6,7 +6,7 @@ var $navContact = $('.nav-contact');
 var $introPage = $('.landing_parent');
 var $navAboutTwo = $(".nav-about-two");
 var $navProjectTwo = $(".nav-projects-two");
-var $titleSpan = $('.title');
+var $titleSpan = $('.title').fadeIn('slow');
 var $socialMedia = $("div.social_media a");
 var $socialMediaMainPage = $("div.sMtwo a");
 var $projectEntry = $('div.project-entry-title');
@@ -289,17 +289,6 @@ if($(window).width() > 768){
 ///////////////////////////////////
 //////////////////////////////////
 //arrows code sections !!!!important!!!
-
-
-
-
-
-
-
-
-
-
-
 var landing_info_position = $('div.landing_info').offset().left / $(window).width()*100+'%';
 console.log(landing_info_position);
 console.log($(window).width());
@@ -315,7 +304,7 @@ var timer = 30;
 function countDown(){
    if(timer < 31 && timer > 0){
      timer--;
-     $('p.timer').text(timer).css({
+     $('.timer_wrapper p').text(timer).css({
        "color":"#d60808"
      });
    } else {
@@ -330,8 +319,14 @@ function positionReset(landing,left,right){
   if(checkPosition(landing)){
     console.log('its true')
   } else{
+    $('div.second_half').children().each(function(i){
+     $(this).delay((($('div.second_half').children().length)-i) * 25).fadeOut('fast');
+    })
+    $('div.programmer_logo img').fadeOut('slow');
+    $('div.programmer_text p').fadeOut('slow');
   landing.animate({
-    left: "24%"
+    left: "24%",
+    boxShadow: '0px 2px 28px -3px rgba(0,0,0,1)'
   },()=>{
     left.animate({
       width: '50%'
@@ -361,15 +356,22 @@ function positionReset(landing,left,right){
     console.log('clicked left')
 if(checkPosition($('div.landing_info'))){
   $('div.landing_info').animate({
-    left: '13%'
+    left: '13%',
+    boxShadow: "-6px 2px 17px 2px rgba(0,0,0,1)"
   },()=>{
     $('div.first_half').animate({
       width: '39%'
     })
     $('div.second_half').animate({
       width:'61%'
+
+    },function(){
+         $('div.second_half').children().each(function(i){
+          $(this).delay(i * 25).fadeIn('fast');
+         })
     })
   })
+
   $arrowLeft.css({
     "pointer-events": "none",
     "color": 'grey'
@@ -382,18 +384,21 @@ if(checkPosition($('div.landing_info'))){
 
 
 $arrowRight.click(()=>{
-  console.log('clicked right')
     if(checkPosition($('div.landing_info'))){
       $('div.landing_info').animate({
-        left: '35%'
+        left: '35%',
+        boxShadow:"5px 2px 17px 2px rgba(0,0,0,1)"
       },()=>{
-        $('div.first_half').animate({
-          width: '61%'
-        },()=>{
-          $('div.second_half').animate({
-            width:'39%'
+        $('div.second_half').animate({
+          width:'39%'
         })
-      })
+          $('div.first_half').animate({
+          width: '61%'
+        },function(){
+          $('div.programmer_logo img').fadeIn('slow');
+          $('div.programmer_text p').fadeIn('slow');
+        })
+
     })
     $arrowRight.css({
       "pointer-events": "none",
@@ -407,3 +412,5 @@ $arrowRight.click(()=>{
 
 
 })
+/////////////////////////////
+/////////////////////////////
