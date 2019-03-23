@@ -10,6 +10,10 @@ class renderController {
     return view.render('error')
 
   }
+
+  renderProject({view}){
+    return view.render('layouts/projectLayout')
+  }
 }
 
 module.exports = renderController;
