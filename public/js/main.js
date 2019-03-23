@@ -357,7 +357,7 @@ function positionReset(landing,left,right){
 if(checkPosition($('div.landing_info'))){
   $('div.landing_info').animate({
     left: '13%',
-    boxShadow: "-6px 2px 17px 2px rgba(0,0,0,1)"
+    boxShadow: "-8px 2px 17px 2px rgba(0,0,0,1)"
   },()=>{
     $('div.first_half').animate({
       width: '39%'
