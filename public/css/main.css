@@ -31,6 +31,24 @@ html {
   overflow-y: auto !important;
 }
 
+.rightShow {
+  -webkit-box-shadow: -5px 2px 17px 2px black;
+  -moz-box-shadow: -5px 2px 17px 2px black;
+  box-shadow: -5px 2px 17px 2px black;
+}
+
+.leftShadow {
+  -webkit-box-shadow: 5px 2px 17px 2px black;
+  -moz-box-shadow: 5px 2px 17px 2px black;
+  box-shadow: 5px 2px 17px 2px black;
+}
+
+.homeShadow {
+  -webkit-box-shadow: 0px 2px 17px 2px black;
+  -moz-box-shadow: 0px 2px 17px 2px black;
+  box-shadow: 0px 2px 17px 2px black;
+}
+
 body {
   margin: 0;
 }
@@ -56,6 +74,27 @@ body {
   float: left;
 }
 
+.landing_parent .landing_background .first_half .programmer_logo {
+  text-align: center;
+}
+
+.landing_parent .landing_background .first_half .programmer_logo img {
+  margin-top: 69px;
+  height: 80px;
+  display: none;
+}
+
+.landing_parent .landing_background .first_half .programmer_text p {
+  box-sizing: border-box;
+  height: 300px;
+  width: 30%;
+  color: white;
+  font-weight: bold;
+  margin-left: 20%;
+  margin-top: 80px;
+  display: none;
+}
+
 .landing_parent .landing_background .second_half {
   width: 50%;
   height: 100%;
@@ -68,6 +107,10 @@ body {
 
 .landing_parent .landing_background .second_half .jquery img {
   height: 50px;
+}
+
+.landing_parent .landing_background .second_half .main_tech {
+  display: none;
 }
 
 .landing_parent .landing_background .second_half .main_tech a {
@@ -96,6 +139,7 @@ body {
 }
 
 .landing_parent .landing_background .second_half .main_tech:nth-child(5) img {
+  margin-top: 6px;
   margin-left: 69%;
 }
 
@@ -121,21 +165,27 @@ body {
 
 .landing_parent .landing_background .landing_info {
   background-color: white;
-  border: 1px solid gray;
   border-radius: 10px;
   height: 55%;
   width: 50%;
   position: absolute;
   top: 24%;
   left: 24%;
+  -webkit-box-shadow: 0px 2px 28px -3px black;
+  -moz-box-shadow: 0px 2px 28px -3px black;
+  box-shadow: 0px 2px 28px -3px black;
 }
 
-.landing_parent .landing_background .landing_info .timer_wrapper {
+.landing_parent .landing_background .landing_info .timer_parent {
   width: 100%;
   height: 20px;
 }
 
-.landing_parent .landing_background .landing_info .timer_wrapper p {
+.landing_parent .landing_background .landing_info .timer_parent .timer_wrapper {
+  display: inline-block;
+}
+
+.landing_parent .landing_background .landing_info .timer_parent .timer_wrapper p {
   box-sizing: border-box;
   height: 23px;
   width: 23px;
@@ -153,9 +203,22 @@ body {
   font-weight: bold;
 }
 
+.landing_parent .landing_background .landing_info .timer_parent .pc_logo {
+  display: inline-block;
+  float: right;
+}
+
+.landing_parent .landing_background .landing_info .timer_parent .pc_logo i.fa-laptop-code {
+  float: right;
+  display: inline-block !important;
+  color: grey;
+  margin: 5px;
+}
+
 .landing_parent .landing_background .landing_info div.personal {
   height: 150px;
   width: 100%;
+  margin-top: 4px;
 }
 
 .landing_parent .landing_background .landing_info div.personal .personal_photo {
@@ -168,12 +231,19 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: 7%;
-  background-color: blue;
-  border: 2px solid grey;
+  border: 0.5px solid grey;
+  background-image: url("../images/meTwo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.landing_parent .landing_background .landing_info div.personal .personal_photo img {
-  border-radius: 50%;
+.landing_parent .landing_background .landing_info div.personal .personal_photo .line {
+  width: 2px;
+  height: 62px;
+  background-color: #22776A;
+  position: absolute;
+  top: 173px;
 }
 
 .landing_parent .landing_background .landing_info div.personal .personal_title {
@@ -191,10 +261,10 @@ body {
   font-size: 39px;
   font-family: 'VT323', monospace;
   text-align: center;
+  display: none;
 }
 
 .landing_parent .landing_background .landing_info div.arrows {
-  background-color: blue;
   width: 100%;
 }
 
@@ -232,6 +302,106 @@ body {
 .landing_parent .landing_background .landing_info div.arrows .left i:hover {
   transition: 1s;
   color: #202124;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .location_ {
+  display: inline-block;
+  width: 20%;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .location_ .location {
+  margin-top: 60px;
+  margin-left: 43px;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .location_ .location img {
+  padding: 5px;
+  height: 60px;
+  width: 60px;
+  border: 1px solid #22776A;
+  border-radius: 5px;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .location_ .location p {
+  margin: 0;
+  font-size: 14px;
+  color: #22776A;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .location_ .location p span {
+  color: grey;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus {
+  display: inline-block;
+  width: 62%;
+  height: 100px;
+  float: right;
+  margin-top: 47px;
+  border-radius: 10px;
+  border: 1px solid #202124;
+  margin-right: 10px;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.reader i {
+  color: #202124;
+  margin: 10px;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.reader i span {
+  color: grey;
+  margin-left: 9px;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.git_codep {
+  text-align: center;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.git_codep ul {
+  padding: 0;
+  margin-top: 4px;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.git_codep ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.git_codep ul li:nth-child(1) {
+  margin-right: 20px;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.git_codep ul li:nth-child(1) a {
+  color: #202124;
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid grey;
+  transition: 1s;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.git_codep ul li:nth-child(1) a:hover {
+  transition: 1s;
+  background-color: #202124;
+  color: white;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.git_codep ul li:nth-child(2) {
+  margin-left: 20px;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.git_codep ul li:nth-child(2) a {
+  color: #202124;
+  transition: 1s;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.git_codep ul li:nth-child(2) a:hover {
+  transition: 1s;
+  color: #22776A;
+}
+
+.landing_parent .landing_background .landing_info div.landing_extra_info .landing_extra_info_plus div.git_codep ul li a {
+  text-decoration: none;
+  font-size: 25px;
 }
 
 .landing_parent .nav_parent {
