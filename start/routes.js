@@ -17,4 +17,5 @@
 const Route = use('Route')
 
 Route.on('/').render('index')
+Route.get('project', 'renderController.renderProject')
 Route.any('*',"renderController.renderError")
