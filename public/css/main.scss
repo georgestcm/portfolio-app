@@ -394,7 +394,7 @@ body {
            font-size: 17px;
            color: $main_color;
            &:hover {
-             color: white;
+             color: $main_color;
            }
          }
        }
@@ -634,10 +634,12 @@ div.main_page {
         margin-right: auto;
         i {
           color: white;
-          margin-top: 13px;
+          position: relative;
+          top: 20px;
           padding: 6px;
           border-radius: 50%;
           background-color: $main_color;
+          display: none;
         }
       }
       .links {
@@ -1255,18 +1257,24 @@ div.main_page {
   }
 }}
 
-@media screen and (min-width: 769px) and (max-width: 1100px){
-  div.landing_page {
-    .me {
-      .me_extra_info{
+@media screen and (min-width: 760px) and (max-width: 1000px){
+  div.landing_parent {
+  div.landing_background {
+    .landing_info {
+      .timer_parent {
+        display: none;
+      }
+      .personal {
+        display: none;
+      }
+      .arrows {
+        display: none;
+      }
+      .landing_extra_info {
+        display: none;
       }
     }
-    .me_info {
-       p {
-         margin-top: 29px !important;
-         font-size: 13px !important;
-       }
-    }
+  }
   }
 
   div.skills {
@@ -1311,15 +1319,22 @@ div.main_page {
 
 @media screen and (max-width: 768px){
   div.landing_parent {
-    .nav_parent {
-      ul {
-        li {
-          &:nth-child(2){
-            display: none;
-          }
-        }
+  div.landing_background {
+    .landing_info {
+      .timer_parent {
+        display: none;
+      }
+      .personal {
+        display: none;
+      }
+      .arrows {
+        display: none;
+      }
+      .landing_extra_info {
+        display: none;
       }
     }
+  }
   }
   div.modal {
     .modal_background {
@@ -1337,7 +1352,12 @@ div.main_page {
         .site_logo {
           display: inline-block;
           img {
-            margin: 9px 0 6px 24px !important;
+            margin: 9px 0 6px 24px;
+          }
+        }
+        div.programmer {
+          i {
+            display: none !important;
           }
         }
         .links {
@@ -1410,31 +1430,54 @@ div.main_page {
   }
 }
 
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
   div.landing_parent {
-    .nav_parent {
-      img[src="images/logo.png"]{
-        display: none;
-      }
-      .nav_intro_page {
-        float: unset;
-        width: 80%;
-        margin: auto;
-        padding: 0;
-        text-align: center;
-        padding-top: 24px;
-        li {
-          padding: 0;
-          margin: 0;
-          width: 28.33%;
+  div.nav_parent {
+    display: flex;
+    justify-content: center;
+    img {
+      display: none;
+    }
+
+    ul {
+      li {
+
+        &:nth-child(1){
+          background-color: #202124 !important;
+        }
+        &:nth-child(2){
+          display: none;
+        }
+
+        &:nth-child(3){
+          margin-left: 32px;
+          background-color: white !important;
+        }
+        a {
+          &:hover {
+            color: $main_color;
+          }
         }
       }
     }
-    .social_media {
-      display: none;
-    }
   }
+  }
+  div.main_page {
+    .nav {
+      nav {
+        div.programmer {
+          i {
+            display: none !important;
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 480px){
   div.modal {
     .modal_background {
       .modal_content {
@@ -1490,4 +1533,18 @@ div.main_page {
       }
     }
   }
+}
+
+@media screen and (max-width: 480px){
+  div.site_logo {
+    img {
+      margin-top: 15px !important;
+    }
+
+  }
+div.programmer {
+  margin-left: 0 !important;
+}
+
+
 }

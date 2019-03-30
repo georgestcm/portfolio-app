@@ -429,7 +429,7 @@ body {
 }
 
 .landing_parent .nav_parent ul li a:hover {
-  color: white;
+  color: #22776A;
 }
 
 .landing_parent .nav_parent img {
@@ -697,10 +697,12 @@ div.main_page div.nav nav .programmer {
 
 div.main_page div.nav nav .programmer i {
   color: white;
-  margin-top: 13px;
+  position: relative;
+  top: 20px;
   padding: 6px;
   border-radius: 50%;
   background-color: #22776A;
+  display: none;
 }
 
 div.main_page div.nav nav .links {
@@ -1330,10 +1332,18 @@ div.main_page div.sMtwo .fa-file:hover {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1100px) {
-  div.landing_page .me_info p {
-    margin-top: 29px !important;
-    font-size: 13px !important;
+@media screen and (min-width: 760px) and (max-width: 1000px) {
+  div.landing_parent div.landing_background .landing_info .timer_parent {
+    display: none;
+  }
+  div.landing_parent div.landing_background .landing_info .personal {
+    display: none;
+  }
+  div.landing_parent div.landing_background .landing_info .arrows {
+    display: none;
+  }
+  div.landing_parent div.landing_background .landing_info .landing_extra_info {
+    display: none;
   }
   div.skills .tech_skill .tech_list .tech_skill_text {
     bottom: 16px !important;
@@ -1353,7 +1363,16 @@ div.main_page div.sMtwo .fa-file:hover {
 }
 
 @media screen and (max-width: 768px) {
-  div.landing_parent .nav_parent ul li:nth-child(2) {
+  div.landing_parent div.landing_background .landing_info .timer_parent {
+    display: none;
+  }
+  div.landing_parent div.landing_background .landing_info .personal {
+    display: none;
+  }
+  div.landing_parent div.landing_background .landing_info .arrows {
+    display: none;
+  }
+  div.landing_parent div.landing_background .landing_info .landing_extra_info {
     display: none;
   }
   div.modal .modal_background .modal_content {
@@ -1366,7 +1385,10 @@ div.main_page div.sMtwo .fa-file:hover {
     display: inline-block;
   }
   div.main_page .nav nav .site_logo img {
-    margin: 9px 0 6px 24px !important;
+    margin: 9px 0 6px 24px;
+  }
+  div.main_page .nav nav div.programmer i {
+    display: none !important;
   }
   div.main_page .nav nav .links {
     margin: 0;
@@ -1424,26 +1446,33 @@ div.main_page div.sMtwo .fa-file:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  div.landing_parent div.nav_parent {
+    display: flex;
+    justify-content: center;
+  }
+  div.landing_parent div.nav_parent img {
+    display: none;
+  }
+  div.landing_parent div.nav_parent ul li:nth-child(1) {
+    background-color: #202124 !important;
+  }
+  div.landing_parent div.nav_parent ul li:nth-child(2) {
+    display: none;
+  }
+  div.landing_parent div.nav_parent ul li:nth-child(3) {
+    margin-left: 32px;
+    background-color: white !important;
+  }
+  div.landing_parent div.nav_parent ul li a:hover {
+    color: #22776A;
+  }
+  div.main_page .nav nav div.programmer i {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 480px) {
-  div.landing_parent .nav_parent img[src="images/logo.png"] {
-    display: none;
-  }
-  div.landing_parent .nav_parent .nav_intro_page {
-    float: unset;
-    width: 80%;
-    margin: auto;
-    padding: 0;
-    text-align: center;
-    padding-top: 24px;
-  }
-  div.landing_parent .nav_parent .nav_intro_page li {
-    padding: 0;
-    margin: 0;
-    width: 28.33%;
-  }
-  div.landing_parent .social_media {
-    display: none;
-  }
   div.modal .modal_background .modal_content {
     width: 300px !important;
   }
@@ -1464,5 +1493,14 @@ div.main_page div.sMtwo .fa-file:hover {
   }
   div.main_page .project .works .project_ul li .pro_info .tempus .t_links {
     padding: 4px 18px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div.site_logo img {
+    margin-top: 15px !important;
+  }
+  div.programmer {
+    margin-left: 0 !important;
   }
 }
