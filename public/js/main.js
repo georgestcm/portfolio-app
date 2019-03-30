@@ -30,7 +30,7 @@ var $arrowLeft = $('.fa-arrow-circle-left');
 var $arrowRight = $('.fa-arrow-circle-right')
 var $jobTitle = $('.title').hide();
 var $techSkills = $(".tech");
-var $programLogo = $('.fa-laptop-code').hide();
+var $programLogo = $('.fa-laptop-code');
 var $socialMediaTwo = $('div.social_media').clone();
 $("div.down_arrow img").hide();
 $mainPage.append($socialMediaTwo);
@@ -40,14 +40,31 @@ $techSkills.on("click",function(e){
 
 $projectHoverDiv.children().hide();
 
+//aniamtion for the main page navigation
 $navLinks.hover(function(){
-  $(this).animate({
-    backgroundColor: "#22776A"
+  $(this).children('a').animate({
+    color:"white"
   })
+  if($(window).width() > 600){
+    $(this).animate({
+      backgroundColor: "#22776A"
+    })
+  } else {
+    $(this).off();
+    }
 },function(){
   $(this).animate({
     backgroundColor: "white"
   })
+  $(this).children('a').animate({
+    color:"#22776A"
+  })
+})
+
+$(window).on('resize',()=>{
+  if($(this).width() < 600){
+    $navLinks.off();
+  }
 })
 
 $mainPageNavAnimation.hover(function(){
@@ -241,10 +258,10 @@ $('div.scrollPercentage').animate({
     $("div.down_arrow img").fadeOut("fast");
   }
 
-  if(percent === 0+"%"){
-    $programLogo.hide();
+  if(percent > 0+"%"){
+    $programLogo.fadeIn('slow');
   } else {
-    $programLogo.fadeIn('slow')
+    $programLogo.fadeOut('slow');
   }
 
 $("div.down_arrow img").on("click",function(){
@@ -290,8 +307,6 @@ if($(window).width() > 768){
 //////////////////////////////////
 //arrows code sections !!!!important!!!
 var landing_info_position = $('div.landing_info').offset().left / $(window).width()*100+'%';
-console.log(landing_info_position);
-console.log($(window).width());
 function checkPosition(el){
 if((el.offset().left / $(window).width()*100+'%') === landing_info_position){
   return true
