@@ -9,7 +9,7 @@ html {
 div.nav {
   position: fixed;
   background-color: #202124;
-  height: 60px;
+  height: 9.6%;
   top: 0;
   left: 0;
   width: 100%;
@@ -51,4 +51,13 @@ div.nav nav ul li:nth-child(2) a:hover {
 
 div.nav nav ul li:nth-child(2) a span {
   margin-left: 2px;
+}
+
+div.projects_nav {
+  width: 9%;
+  height: 90.4vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-right: 1px solid #202124;
 }
