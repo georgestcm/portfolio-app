@@ -345,7 +345,7 @@ body {
   float: right;
   border-radius: 10px;
   border: 1px solid #22776A;
-  margin-right: 20px;
+  margin-right: 30px;
   margin-bottom: 20px;
 }
 
@@ -1334,6 +1334,9 @@ div.main_page div.sMtwo .fa-file:hover {
   div.landing_page .me_info {
     height: 33% !important;
   }
+  div.landing_parent .landing_background .landing_info {
+    height: 49%;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -1342,7 +1345,19 @@ div.main_page div.sMtwo .fa-file:hover {
   }
 }
 
+@media screen and (min-width: 1001px) and (max-width: 1065px) {
+  div.landing_info .info_wrapper .landing_extra_info .location_ {
+    width: 30% !important;
+  }
+  div.landing_info .info_wrapper .landing_extra_info_plus {
+    width: 61% !important;
+  }
+}
+
 @media screen and (min-width: 767px) and (max-width: 1000px) {
+  div.landing_parent div.landing_background .landing_info {
+    width: 58%;
+  }
   div.landing_parent div.landing_background .landing_info .timer_parent {
     display: none;
   }
@@ -1382,6 +1397,7 @@ div.main_page div.sMtwo .fa-file:hover {
     height: 150px;
     width: 150px;
     margin-top: 24px;
+    margin-left: 12px;
     border: 0.5px solid grey;
   }
   div.landing_parent div.landing_background .landing_info .info .info_wrapper .landing_responsive .landing_responsive_Wrapper .responsive_text {
@@ -1449,7 +1465,8 @@ div.main_page div.sMtwo .fa-file:hover {
     border-radius: 50%;
     height: 150px;
     width: 150px;
-    margin-top: 24px;
+    margin-top: 44px;
+    margin-left: 12px;
     border: 0.5px solid grey;
   }
   div.landing_parent div.landing_background .landing_info .info .info_wrapper .landing_responsive .landing_responsive_Wrapper .responsive_text {
@@ -1534,6 +1551,28 @@ div.main_page div.sMtwo .fa-file:hover {
   }
 }
 
+@media screen and (max-width: 766px) {
+  div.landing_info {
+    top: 19% !important;
+    height: 76% !important;
+  }
+  div.landing_info div.info .info_wrapper {
+    height: 95%;
+  }
+  div.landing_info div.info .info_wrapper .landing_responsive h2 {
+    margin: 0 !important;
+    font-size: 1em;
+  }
+  div.landing_info div.info .info_wrapper .landing_responsive .landing_responsive_Wrapper .responsive_photo img {
+    height: 130px !important;
+    width: 130px !important;
+    margin-top: 13px !important;
+  }
+  div.landing_info div.info .info_wrapper .landing_responsive .landing_responsive_Wrapper .responsive_text {
+    margin: 0 !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   div.landing_parent div.nav_parent {
     display: flex;
@@ -1557,6 +1596,26 @@ div.main_page div.sMtwo .fa-file:hover {
   }
   div.main_page .nav nav div.programmer i {
     display: none !important;
+  }
+  div.info_wrapper {
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.landing_info {
+    top: 40% !important;
+    width: 70% !important;
+    left: 17% !important;
+  }
+  div.responsive_text {
+    display: none !important;
+  }
+  div.responsive_photo {
+    display: none !important;
+  }
+  div.landing_info {
+    height: 10% !important;
   }
 }
 
