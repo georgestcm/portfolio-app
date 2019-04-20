@@ -1720,3 +1720,44 @@ div.programmer {
 
 
 }
+
+//height sections
+
+@media screen and (min-height: 1020px)and (max-height:2024px){
+  div.landing_info {
+    height: 35% !important;
+    top: 32% !important;
+    div.info {
+      .info_wrapper {
+        .landing_responsive {
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-height:560px){
+  div.landing_info {
+    height: 13% !important;
+    top: 44% !important;
+    div.info {
+      .info_wrapper {
+        .landing_responsive {
+          width: 100%;
+          margin: 10px 0 !important;
+          h2 {
+            margin: auto 0 !important;
+            width: inherit !important;
+          }
+          .landing_responsive_Wrapper {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
