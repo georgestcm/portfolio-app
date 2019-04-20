@@ -726,10 +726,37 @@ div.main_page {
     margin-top: 20px;
     .works {
       ul.project_ul {
+        &:nth-child(2){
+          margin-top: 20px;
+          li {
+          &:nth-child(1){
+            // background-image: url("");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            //border: 1px solid #202124; only needed if nessesay
+            background-color: red;
+          }
+          &:nth-child(2){
+            //background-image: url("");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            background-color: red;
+          }
+          &:nth-child(3){
+            //background-image: url("");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            background-color: red;
+          }
+        }
+        }
         padding: 0;
         text-align: center;
         margin-top: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         li {
           width: 25.3%;
           height: 230px;
@@ -739,24 +766,26 @@ div.main_page {
           border-radius: 12px;
           vertical-align: top;
           &:nth-child(1){
-            background-image: url("../images/ruth.png");
+            // background-image: url("");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 50%;
-            border: 1px solid #202124;
+            //border: 1px solid #202124; only needed if nessesay
+            background-color: grey;
           }
           &:nth-child(2){
-            background-image: url("../images/clothing_c.png");
+            //background-image: url("");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
+            background-color: grey;
           }
           &:nth-child(3){
-            background-image: url("../images/tempus.png");
+            //background-image: url("");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 50%;
-            background-color: #08171f;
+            background-color: grey;
           }
 
           .pro_info {
@@ -768,34 +797,9 @@ div.main_page {
             display: flex;
             justify-content: center;
             align-items: center;
-            .central{
-            .pro_c {
-              margin: 0 auto;
-              width: 80%;
-              padding-top: 10px;
-              color: white;
-              font-weight: bold;
-              padding-bottom: 30px;
-            }
-            .c_links {
-              background-color: $main_color;
-              border-radius: 9px;
-              text-decoration: none;
-              color: white;
-              margin-left: 15px;
-              padding: 4px 30px;
-              transition: 1s;
-              &:hover {
-                transition: 1s;
-                color: $main_color;
-                background-color: white;
-              }
-            }
-
-            }
-
-            .ruth {
-              .pro_ruth {
+            .pro_info_temp {
+              width: 100%;
+              .pro_temp {
                 margin: 0 auto;
                 width: 80%;
                 padding-top: 10px;
@@ -803,44 +807,27 @@ div.main_page {
                 font-weight: bold;
                 padding-bottom: 30px;
               }
-              .r_links {
+              .pro_temp_links{
+                width: 100%;
+                margin: auto;
+              .temp_links {
                 background-color: $main_color;
                 border-radius: 9px;
                 text-decoration: none;
                 color: white;
-                margin-left: 15px;
-                padding: 4px 30px;
                 transition: 1s;
+                margin-right: 9px;
+                padding: 4px 20px;
+                &:nth-child(2){
+                  margin-left: 9px;
+                  padding: 4px 10px;
+                }
                 &:hover {
                   transition: 1s;
                   color: $main_color;
                   background-color: white;
                 }
-              }
-            }
-            .tempus {
-              .pro_tem {
-                margin: 0 auto;
-                width: 80%;
-                padding-top: 10px;
-                color: white;
-                font-weight: bold;
-                padding-bottom: 30px;
-              }
-              .t_links {
-                background-color: $main_color;
-                border-radius: 9px;
-                text-decoration: none;
-                color: white;
-                margin-left: 15px;
-                padding: 4px 30px;
-                transition: 1s;
-                &:hover {
-                  transition: 1s;
-                  color: $main_color;
-                  background-color: white;
-                }
-              }
+              }}
             }
           }
         }

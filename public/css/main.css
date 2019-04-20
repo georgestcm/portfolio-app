@@ -803,7 +803,32 @@ div.main_page div.project .works ul.project_ul {
   padding: 0;
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+div.main_page div.project .works ul.project_ul:nth-child(2) {
+  margin-top: 20px;
+}
+
+div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(1) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  background-color: red;
+}
+
+div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(2) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: red;
+}
+
+div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(3) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  background-color: red;
 }
 
 div.main_page div.project .works ul.project_ul li {
@@ -817,26 +842,24 @@ div.main_page div.project .works ul.project_ul li {
 }
 
 div.main_page div.project .works ul.project_ul li:nth-child(1) {
-  background-image: url("../images/ruth.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
-  border: 1px solid #202124;
+  background-color: grey;
 }
 
 div.main_page div.project .works ul.project_ul li:nth-child(2) {
-  background-image: url("../images/clothing_c.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  background-color: grey;
 }
 
 div.main_page div.project .works ul.project_ul li:nth-child(3) {
-  background-image: url("../images/tempus.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
-  background-color: #08171f;
+  background-color: grey;
 }
 
 div.main_page div.project .works ul.project_ul li .pro_info {
@@ -850,7 +873,11 @@ div.main_page div.project .works ul.project_ul li .pro_info {
   align-items: center;
 }
 
-div.main_page div.project .works ul.project_ul li .pro_info .central .pro_c {
+div.main_page div.project .works ul.project_ul li .pro_info .pro_info_temp {
+  width: 100%;
+}
+
+div.main_page div.project .works ul.project_ul li .pro_info .pro_info_temp .pro_temp {
   margin: 0 auto;
   width: 80%;
   padding-top: 10px;
@@ -859,67 +886,27 @@ div.main_page div.project .works ul.project_ul li .pro_info .central .pro_c {
   padding-bottom: 30px;
 }
 
-div.main_page div.project .works ul.project_ul li .pro_info .central .c_links {
+div.main_page div.project .works ul.project_ul li .pro_info .pro_info_temp .pro_temp_links {
+  width: 100%;
+  margin: auto;
+}
+
+div.main_page div.project .works ul.project_ul li .pro_info .pro_info_temp .pro_temp_links .temp_links {
   background-color: #22776A;
   border-radius: 9px;
   text-decoration: none;
   color: white;
-  margin-left: 15px;
-  padding: 4px 30px;
   transition: 1s;
+  margin-right: 9px;
+  padding: 4px 20px;
 }
 
-div.main_page div.project .works ul.project_ul li .pro_info .central .c_links:hover {
-  transition: 1s;
-  color: #22776A;
-  background-color: white;
+div.main_page div.project .works ul.project_ul li .pro_info .pro_info_temp .pro_temp_links .temp_links:nth-child(2) {
+  margin-left: 9px;
+  padding: 4px 10px;
 }
 
-div.main_page div.project .works ul.project_ul li .pro_info .ruth .pro_ruth {
-  margin: 0 auto;
-  width: 80%;
-  padding-top: 10px;
-  color: white;
-  font-weight: bold;
-  padding-bottom: 30px;
-}
-
-div.main_page div.project .works ul.project_ul li .pro_info .ruth .r_links {
-  background-color: #22776A;
-  border-radius: 9px;
-  text-decoration: none;
-  color: white;
-  margin-left: 15px;
-  padding: 4px 30px;
-  transition: 1s;
-}
-
-div.main_page div.project .works ul.project_ul li .pro_info .ruth .r_links:hover {
-  transition: 1s;
-  color: #22776A;
-  background-color: white;
-}
-
-div.main_page div.project .works ul.project_ul li .pro_info .tempus .pro_tem {
-  margin: 0 auto;
-  width: 80%;
-  padding-top: 10px;
-  color: white;
-  font-weight: bold;
-  padding-bottom: 30px;
-}
-
-div.main_page div.project .works ul.project_ul li .pro_info .tempus .t_links {
-  background-color: #22776A;
-  border-radius: 9px;
-  text-decoration: none;
-  color: white;
-  margin-left: 15px;
-  padding: 4px 30px;
-  transition: 1s;
-}
-
-div.main_page div.project .works ul.project_ul li .pro_info .tempus .t_links:hover {
+div.main_page div.project .works ul.project_ul li .pro_info .pro_info_temp .pro_temp_links .temp_links:hover {
   transition: 1s;
   color: #22776A;
   background-color: white;
