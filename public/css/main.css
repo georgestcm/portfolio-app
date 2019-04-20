@@ -76,23 +76,46 @@ body {
 
 .landing_parent .landing_background .first_half .programmer_logo {
   text-align: center;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing_parent .landing_background .first_half .programmer_logo img {
-  margin-top: 69px;
   height: 80px;
   display: none;
 }
 
+.landing_parent .landing_background .first_half .programmer_text {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
 .landing_parent .landing_background .first_half .programmer_text p {
   box-sizing: border-box;
-  height: 300px;
   width: 30%;
   color: white;
   font-weight: bold;
-  margin-left: 20%;
-  margin-top: 80px;
   display: none;
+  margin-left: 150px;
+}
+
+.landing_parent .landing_background .first_half .programmer_logo_two {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing_parent .landing_background .first_half .programmer_logo_two .hammer {
+  display: none;
+}
+
+.landing_parent .landing_background .first_half .programmer_logo_two .hammer i {
+  font-size: 75px;
+  color: white;
 }
 
 .landing_parent .landing_background .second_half {

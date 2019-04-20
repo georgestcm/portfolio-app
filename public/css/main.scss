@@ -69,22 +69,39 @@ body {
       float: left;
       .programmer_logo {
         text-align: center;
+        height: 25%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
         img {
-          margin-top: 69px;
           height: 80px;
           display: none;
         }
       }
       .programmer_text {
+        height: 50%;
+        display: flex;
+        align-items: center;
         p {
          box-sizing: border-box;
-         height: 300px;
          width: 30%;
          color: white;
          font-weight: bold;
-         margin-left: 20%;
-         margin-top: 80px;
          display: none;
+         margin-left: 150px;
+        }
+      }
+      .programmer_logo_two {
+        height: 25%;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+        .hammer {
+          display: none;
+          i {
+            font-size: 75px;
+            color: white;
+          }
         }
       }
     }
