@@ -339,6 +339,7 @@ function positionReset(landing,left,right){
     })
     $('div.programmer_logo img').fadeOut('slow');
     $('div.programmer_text p').fadeOut('slow');
+    $('div.programmer_logo_two div.hammer').fadeOut('slow');
   landing.animate({
     left: "24%",
     boxShadow: '0px 2px 28px -3px rgba(0,0,0,1)'
@@ -412,6 +413,7 @@ $arrowRight.click(()=>{
         },function(){
           $('div.programmer_logo img').fadeIn('slow');
           $('div.programmer_text p').fadeIn('slow');
+          $('div.programmer_logo_two div.hammer').fadeIn('slow');
         })
 
     })
