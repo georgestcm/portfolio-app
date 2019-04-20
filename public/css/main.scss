@@ -18,6 +18,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2222222;
 }
 
 .navColor {
@@ -1302,6 +1303,7 @@ div.main_page {
   div.landing_background {
     .landing_info {
       width: 58%;
+      height: 40%;
       .timer_parent {
         display: none;
       }
@@ -1403,12 +1405,38 @@ div.main_page {
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1050px){
+div.landing_page {
+  .me {
+    width: 31% !important;
+   height: 470px !important;
+  }
+  .me_info {
+    width: 50% !important;
+  }
+}
+
+  div.tech_list {
+    padding: 0px 40px 0px 40px !important;
+    .techs {
+      ul.list_one {
+        margin-left: 30px !important;
+      }
+    }
+    .tech_skill_text {
+      position: relative;
+    top: 6px;
+      p {
+      }
+    }
+  }
+
+}
 
 @media screen and (max-width: 768px){
   div.landing_parent {
   div.landing_background {
     .landing_info {
-      height: 68%;
       .timer_parent {
         display: none;
       }
@@ -1556,8 +1584,8 @@ div.main_page {
 }
 @media screen and (max-width: 766px){
   div.landing_info{
-    top: 19% !important;
-    height: 76% !important;
+    top: 27% !important;
+    height: 40% !important;
   div.info {
     .info_wrapper {
       height: 95%;
@@ -1737,7 +1765,6 @@ div.programmer {
       }
     }
   }
-
 }
 
 @media screen and (max-height:560px){

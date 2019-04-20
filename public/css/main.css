@@ -17,6 +17,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2222222;
 }
 
 .navColor {
@@ -1367,6 +1368,7 @@ div.main_page div.sMtwo .fa-file:hover {
 @media screen and (min-width: 767px) and (max-width: 1000px) {
   div.landing_parent div.landing_background .landing_info {
     width: 58%;
+    height: 40%;
   }
   div.landing_parent div.landing_background .landing_info .timer_parent {
     display: none;
@@ -1441,10 +1443,27 @@ div.main_page div.sMtwo .fa-file:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
-  div.landing_parent div.landing_background .landing_info {
-    height: 68%;
+@media screen and (min-width: 769px) and (max-width: 1050px) {
+  div.landing_page .me {
+    width: 31% !important;
+    height: 470px !important;
   }
+  div.landing_page .me_info {
+    width: 50% !important;
+  }
+  div.tech_list {
+    padding: 0px 40px 0px 40px !important;
+  }
+  div.tech_list .techs ul.list_one {
+    margin-left: 30px !important;
+  }
+  div.tech_list .tech_skill_text {
+    position: relative;
+    top: 6px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   div.landing_parent div.landing_background .landing_info .timer_parent {
     display: none;
   }
@@ -1563,8 +1582,8 @@ div.main_page div.sMtwo .fa-file:hover {
 
 @media screen and (max-width: 766px) {
   div.landing_info {
-    top: 19% !important;
-    height: 76% !important;
+    top: 27% !important;
+    height: 40% !important;
   }
   div.landing_info div.info .info_wrapper {
     height: 95%;
