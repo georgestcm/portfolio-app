@@ -1573,6 +1573,17 @@ div.landing_page {
             &:nth-child(2) {
               background-size: 107% !important;
             }
+            .pro_info {
+              .pro_info_temp {
+                .pro_temp_links {
+                  a {
+                  &:nth-child(2){
+                    display: none;
+                  }
+                }
+                }
+              }
+            }
           }
         }
 

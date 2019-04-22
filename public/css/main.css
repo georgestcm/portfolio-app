@@ -1578,6 +1578,9 @@ div.main_page div.sMtwo .fa-file:hover {
   div.main_page .project .works .project_ul li:nth-child(2) {
     background-size: 107% !important;
   }
+  div.main_page .project .works .project_ul li .pro_info .pro_info_temp .pro_temp_links a:nth-child(2) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 766px) {
