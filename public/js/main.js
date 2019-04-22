@@ -32,6 +32,7 @@ var $jobTitle = $('.title').hide();
 var $techSkills = $(".tech");
 var $programLogo = $('.fa-laptop-code');
 var $socialMediaTwo = $('div.social_media').clone();
+var landing_info_position =  Math.ceil($('div.landing_info').offset().left / $(window).width()*100)
 $("div.down_arrow img").hide();
 $mainPage.append($socialMediaTwo);
 $techSkills.on("click",function(e){
@@ -96,6 +97,7 @@ hover($socialMedia);
 //animation for social media link hover
 $navAbout.on("click",function(e){
   e.preventDefault();
+  positionReset($('div.landing_info'),$('div.first_half'),$('div.second_half'));
   $socialMediaTwo.fadeIn('fast').addClass('sMtwo');
   hover($socialMediaTwo.children('a'));
   $introPage.fadeOut();
@@ -112,6 +114,7 @@ $navAbout.on("click",function(e){
 })
 
 $navProjects.on("click",function(e){
+  positionReset($('div.landing_info'),$('div.first_half'),$('div.second_half'));
   e.preventDefault();
   $socialMediaTwo.fadeIn('fast').addClass('sMtwo');
   hover($socialMediaTwo.children('a'));
@@ -249,7 +252,7 @@ $jobTitle.fadeIn('slow');
   					var scrollPercentRounded = Math.round(scrollPercent*100);
 $('div.scrollPercentage').animate({
     width: scrollPercentRounded+"%"
-  },20);
+  },25);
 
   var percent = scrollPercentRounded+"%";
   if(percent=== 0+"%"){
@@ -272,4 +275,58 @@ if($(window).width() > 768){
 }
 })
 
-}) })
+})
+function returnPosition(ele){
+  return Math.ceil(ele.offset().left / $(window).width()*100);
+}
+
+
+
+
+function positionReset(landing,left,right){
+  if(returnPosition(landing) != landing_info_position){
+    $('div.second_half').children().each(function(i){
+     $(this).delay((($('div.second_half').children().length)-i) * 25).fadeOut('fast');
+    })
+    $('div.programmer_logo img').fadeOut('slow');
+    $('div.programmer_text p').fadeOut('slow');
+    $('div.programmer_logo_two div.hammer').fadeOut('slow');
+  landing.animate({
+    left: 24+'%',
+    boxShadow: '0px 2px 28px -3px rgba(0,0,0,1)'
+  },()=>{
+    left.animate({
+      width: '50%'
+    })
+    right.animate({
+      width: '50%'
+    })
+  })
+
+  $arrowLeft.css({
+    "pointer-events": "initial",
+    "color": '#22776A'
+  })
+  $arrowRight.css({
+    "pointer-events": "initial",
+    "color": '#22776A'
+  })
+  $('p.timer').css({
+    "color":"grey"
+  }).text("M");
+  } else{
+
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+ })
