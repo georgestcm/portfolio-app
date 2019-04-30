@@ -748,12 +748,12 @@ div.main_page {
           margin-top: 20px;
           li {
           &:nth-child(1){
-            // background-image: url("");
+            background-image: url("/images/smalljobicon.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 50%;
-            //border: 1px solid #202124; only needed if nessesay
-            background-color: red;
+            border: 1px solid grey;
+            background-color: white;
           }
           &:nth-child(2){
             //background-image: url("");
@@ -763,10 +763,10 @@ div.main_page {
             background-color: red;
           }
           &:nth-child(3){
-            //background-image: url("");
+            background-image: url('');
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 50%;
+            background-size: 65%;
             background-color: red;
           }
         }
@@ -799,10 +799,10 @@ div.main_page {
             background-color: grey;
           }
           &:nth-child(3){
-            //background-image: url("");
+            background-image: url("/images/joshuaicon.jpg");
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 50%;
+            background-size: 100%;
             background-color: grey;
           }
 
@@ -1686,7 +1686,24 @@ div.landing_page {
   div.landing_info {
     height: 10% !important;
   }
-}
+  div.works {
+    ul.project_ul {
+      li {
+        &:nth-child(3){
+          background-size: 100% 400px !important;
+        }
+      }
+      &:nth-child(2){
+        li {
+          &:nth-child(1){
+            background-size: 80% !important;
+          }
+        }
+        }
+      }
+    }
+  }
+
 
 @media screen and (max-width: 480px){
   div.modal {

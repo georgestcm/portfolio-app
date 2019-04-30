@@ -835,10 +835,12 @@ div.main_page div.project .works ul.project_ul:nth-child(2) {
 }
 
 div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(1) {
+  background-image: url("/images/smalljobicon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
-  background-color: red;
+  border: 1px solid grey;
+  background-color: white;
 }
 
 div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(2) {
@@ -849,9 +851,10 @@ div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(2) {
 }
 
 div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(3) {
+  background-image: url("");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50%;
+  background-size: 65%;
   background-color: red;
 }
 
@@ -880,9 +883,10 @@ div.main_page div.project .works ul.project_ul li:nth-child(2) {
 }
 
 div.main_page div.project .works ul.project_ul li:nth-child(3) {
+  background-image: url("/images/joshuaicon.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50%;
+  background-size: 100%;
   background-color: grey;
 }
 
@@ -1648,6 +1652,12 @@ div.main_page div.sMtwo .fa-file:hover {
   }
   div.landing_info {
     height: 10% !important;
+  }
+  div.works ul.project_ul li:nth-child(3) {
+    background-size: 100% 400px !important;
+  }
+  div.works ul.project_ul:nth-child(2) li:nth-child(1) {
+    background-size: 80% !important;
   }
 }
 
