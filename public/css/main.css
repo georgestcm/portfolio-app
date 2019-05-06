@@ -851,11 +851,12 @@ div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(2) {
 }
 
 div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(3) {
-  background-image: url("");
+  background-image: url("/images/ruth.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 65%;
-  background-color: red;
+  background-size: 50%;
+  border: 1px solid grey;
+  background-color: white;
 }
 
 div.main_page div.project .works ul.project_ul li {
@@ -1654,7 +1655,7 @@ div.main_page div.sMtwo .fa-file:hover {
     height: 10% !important;
   }
   div.works ul.project_ul li:nth-child(3) {
-    background-size: 100% 400px !important;
+    background-size: 50% 200px !important;
   }
   div.works ul.project_ul:nth-child(2) li:nth-child(1) {
     background-size: 80% !important;

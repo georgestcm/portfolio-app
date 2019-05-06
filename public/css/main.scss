@@ -763,11 +763,12 @@ div.main_page {
             background-color: red;
           }
           &:nth-child(3){
-            background-image: url('');
+            background-image: url('/images/ruth.png');
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 65%;
-            background-color: red;
+            background-size: 50%;
+            border: 1px solid grey;
+            background-color: white;
           }
         }
         }
@@ -1690,7 +1691,7 @@ div.landing_page {
     ul.project_ul {
       li {
         &:nth-child(3){
-          background-size: 100% 400px !important;
+          background-size: 50% 200px !important;
         }
       }
       &:nth-child(2){
