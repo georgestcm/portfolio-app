@@ -1,6 +1,20 @@
 
 $main_color: #22776A;
+body::-webkit-scrollbar {
+  width: 6px;
+}
 
+/* Track */
+body::-webkit-scrollbar-track {
+  //box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #22776A;
+  border-radius: 10px;
+}
 html {
   font-family: 'PT Sans', sans-serif;
 }
@@ -1245,7 +1259,14 @@ div.main_page {
   }
 }
 
-
+div.project_displayer {
+  width: 100%;
+  height: 0vh;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-top: 2px solid grey;
+}
 //media queries
 
 
