@@ -17,6 +17,5 @@
 const Route = use('Route')
 
 Route.on('/').render('index')
-Route.get('project', 'renderController.renderProject')
 Route.post('/user',"UserController.store")
 Route.any('*',"renderController.renderError")
