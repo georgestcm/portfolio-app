@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Georges Thianga | Full Stack Web Developer</title>
   {{style('css/main')}}
+  {{style('css/project')}}
   <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
@@ -240,7 +241,7 @@ Stand up, speak out, and bravely, in God's name. <em>-Maltbie</em> </p>
           studying and by building projects.</p>
       </div>
     </div>
-    <div class="project">
+    <div class="project" id="projects">
       <h1>My recent works</h1>
         <p>Here are a few of my recent projects</p>
         <div class="works">
@@ -313,7 +314,7 @@ Stand up, speak out, and bravely, in God's name. <em>-Maltbie</em> </p>
                  </p>
                  <div class="pro_temp_links">
                  <a href="#" class="temp_links" target="_blank">Live</a>
-                 <a href="\project" class="temp_links">More Info</a>
+                 <a  class="temp_links more_info">More Info</a>
                </div>
                  </div>
               </div>
@@ -326,7 +327,7 @@ Stand up, speak out, and bravely, in God's name. <em>-Maltbie</em> </p>
                  </p>
                  <div class="pro_temp_links">
                  <a href="#" class="temp_links" target="_blank">Live</a>
-                 <a href="\project" class="temp_links">More Info</a>
+                 <a href="#"class="temp_links  more_info">More Info</a>
                </div>
                  </div>
               </div>
@@ -351,8 +352,23 @@ Stand up, speak out, and bravely, in God's name. <em>-Maltbie</em> </p>
     </footer>
   </div>
      </div>
+     <div class="project_displayer">
+       <div class="nav_project_displayer">
+         <nav>
+           <div class="site_logo">
+             <img src="images/logo.png" alt="site logo">
+           </div>
+           <div class="nav_project_displayer_links">
+             <ul>
+               <li><a href="" class=" project_exit">click here</a></li>
+             </ul>
+           </div>
+         </nav>
+       </div>
+     </div>
 </div>
 {{script('js/shadow.js')}}
 {{script('js/main')}}
+{{script('js/project')}}
 </body>
 </html>
