@@ -148,13 +148,13 @@ body {
         }
         &:nth-child(2){
           a {
-            margin-left: 52%;
+            margin-left: 50%;
             color: #002561;
           }
         }
         &:nth-child(3){
           a {
-            margin-left: 59%;
+            margin-left: 57%;
             color: #c6538c;
           }
         }
@@ -166,7 +166,8 @@ body {
         }
         &:nth-child(5){
           img {
-            margin-top: 6px;
+            margin-top: 13px;
+            margin-bottom: 10px;
             margin-left: 69%;
           }
         }
@@ -184,13 +185,16 @@ body {
         }
         &:nth-child(8){
           a {
-            margin-left: 55%;
+            margin-left: 50%;
             color: #00758F;
+            img {
+              width: 10%;
+            }
           }
         }
         &:nth-child(9){
           a {
-            margin-left: 45%;
+            margin-left: 43%;
             color: #F1502F;
           }
         }
@@ -465,13 +469,8 @@ div.social_media {
   text-decoration: none;
    }
 
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-    border-radius: 0 10px 0 0;
-  }
-
   .fa-linkedin {
+    border-radius: 0 10px 0 0;
   background: #007bb5;
   color: white;
 }
@@ -758,34 +757,6 @@ div.main_page {
     margin-top: 20px;
     .works {
       ul.project_ul {
-        &:nth-child(2){
-          margin-top: 20px;
-          li {
-          &:nth-child(1){
-            background-image: url("/images/smalljobicon.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 50%;
-            border: 1px solid grey;
-            background-color: white;
-          }
-          &:nth-child(2){
-            //background-image: url("");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100%;
-            background-color: red;
-          }
-          &:nth-child(3){
-            background-image: url('/images/ruth.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 50%;
-            border: 1px solid grey;
-            background-color: white;
-          }
-        }
-        }
         padding: 0;
         text-align: center;
         margin-top: 40px;
@@ -799,21 +770,14 @@ div.main_page {
           border-radius: 12px;
           vertical-align: top;
           &:nth-child(1){
-            // background-image: url("");
+            background-image: url("/images/smalljobicon.png");
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 50%;
-            //border: 1px solid #202124; only needed if nessesay
-            background-color: grey;
+            background-size: 40%;
+            background-color: white;
+            border: 1px solid grey;
           }
           &:nth-child(2){
-            //background-image: url("");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100%;
-            background-color: grey;
-          }
-          &:nth-child(3){
             background-image: url("/images/joshuaicon.jpg");
             background-repeat: no-repeat;
             background-position: center;
@@ -1197,6 +1161,8 @@ div.main_page {
     div.tech_skill_text{
       display: inline-block;
       width: 70%;
+      position: relative;
+    bottom: 29px;
       p {
         margin: 0;
         color: $main_color;
@@ -1232,15 +1198,10 @@ div.main_page {
     text-decoration: none;
      }
 
-    .fa-twitter {
-      background: #55ACEE;
-      color: white;
-      border-radius: 0 10px 0 0;
-    }
-
     .fa-linkedin {
     background: #007bb5;
     color: white;
+    border-radius: 0 10px 0 0;
   }
 
   .fa-file {
@@ -1259,16 +1220,16 @@ div.main_page {
   }
 }
 
-div.project_displayer {
-  width: 100%;
-  height: 0vh;
-  position: fixed;
-  bottom: 0;
-  background-color: white;
-  border-top: 2px solid grey;
-}
 //media queries
 
+
+
+@media screen and (min-width: 1840px){
+  div.landing_info {
+    //width: 43% !important;
+    //left: 29% !important;
+  }
+}
 
 @media screen and (min-width: 1741px){
   div.landing_page {

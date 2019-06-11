@@ -163,12 +163,12 @@ body {
 }
 
 .landing_parent .landing_background .second_half .main_tech:nth-child(2) a {
-  margin-left: 52%;
+  margin-left: 50%;
   color: #002561;
 }
 
 .landing_parent .landing_background .second_half .main_tech:nth-child(3) a {
-  margin-left: 59%;
+  margin-left: 57%;
   color: #c6538c;
 }
 
@@ -178,7 +178,8 @@ body {
 }
 
 .landing_parent .landing_background .second_half .main_tech:nth-child(5) img {
-  margin-top: 6px;
+  margin-top: 13px;
+  margin-bottom: 10px;
   margin-left: 69%;
 }
 
@@ -193,12 +194,16 @@ body {
 }
 
 .landing_parent .landing_background .second_half .main_tech:nth-child(8) a {
-  margin-left: 55%;
+  margin-left: 50%;
   color: #00758F;
 }
 
+.landing_parent .landing_background .second_half .main_tech:nth-child(8) a img {
+  width: 10%;
+}
+
 .landing_parent .landing_background .second_half .main_tech:nth-child(9) a {
-  margin-left: 45%;
+  margin-left: 43%;
   color: #F1502F;
 }
 
@@ -503,13 +508,8 @@ body {
   text-decoration: none;
 }
 
-.landing_parent div.social_media .fa-twitter {
-  background: #55ACEE;
-  color: white;
-  border-radius: 0 10px 0 0;
-}
-
 .landing_parent div.social_media .fa-linkedin {
+  border-radius: 0 10px 0 0;
   background: #007bb5;
   color: white;
 }
@@ -845,35 +845,6 @@ div.main_page div.project .works ul.project_ul {
   margin-bottom: 10px;
 }
 
-div.main_page div.project .works ul.project_ul:nth-child(2) {
-  margin-top: 20px;
-}
-
-div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(1) {
-  background-image: url("/images/smalljobicon.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
-  border: 1px solid grey;
-  background-color: white;
-}
-
-div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(2) {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-color: red;
-}
-
-div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(3) {
-  background-image: url("/images/ruth.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
-  border: 1px solid grey;
-  background-color: white;
-}
-
 div.main_page div.project .works ul.project_ul li {
   width: 25.3%;
   height: 230px;
@@ -885,20 +856,15 @@ div.main_page div.project .works ul.project_ul li {
 }
 
 div.main_page div.project .works ul.project_ul li:nth-child(1) {
+  background-image: url("/images/smalljobicon.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50%;
-  background-color: grey;
+  background-size: 40%;
+  background-color: white;
+  border: 1px solid grey;
 }
 
 div.main_page div.project .works ul.project_ul li:nth-child(2) {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-color: grey;
-}
-
-div.main_page div.project .works ul.project_ul li:nth-child(3) {
   background-image: url("/images/joshuaicon.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1308,6 +1274,8 @@ div.main_page div.about div.skills .tech_skill .tech_list div.techs ul.list_two 
 div.main_page div.about div.skills .tech_skill .tech_list div.tech_skill_text {
   display: inline-block;
   width: 70%;
+  position: relative;
+  bottom: 29px;
 }
 
 div.main_page div.about div.skills .tech_skill .tech_list div.tech_skill_text p {
@@ -1333,15 +1301,10 @@ div.main_page div.sMtwo a {
   text-decoration: none;
 }
 
-div.main_page div.sMtwo .fa-twitter {
-  background: #55ACEE;
-  color: white;
-  border-radius: 0 10px 0 0;
-}
-
 div.main_page div.sMtwo .fa-linkedin {
   background: #007bb5;
   color: white;
+  border-radius: 0 10px 0 0;
 }
 
 div.main_page div.sMtwo .fa-file {
@@ -1356,15 +1319,6 @@ div.main_page div.sMtwo .fa-file:hover {
   border: 1px solid gray;
   color: #22776A;
   transition: fast;
-}
-
-div.project_displayer {
-  width: 100%;
-  height: 0vh;
-  position: fixed;
-  bottom: 0;
-  background-color: white;
-  border-top: 2px solid grey;
 }
 
 @media screen and (min-width: 1741px) {
