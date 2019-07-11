@@ -719,6 +719,63 @@ div.main_page div.footer footer ul li .fa-file-text-o {
   color: #22776A;
 }
 
+div.main_page div.project_display {
+  display: none;
+}
+
+div.main_page div.project_display div.project_display_wrapper_ {
+  height: 86%;
+  width: 68%;
+  background-color: white;
+  position: fixed;
+  bottom: 6%;
+  left: 16%;
+  z-index: 222222222;
+  border-radius: 5px;
+}
+
+div.main_page div.project_display div.project_display_wrapper_ div.project_photos {
+  height: 80%;
+  width: 100%;
+  background-color: red;
+  border-radius: inherit;
+}
+
+div.main_page div.project_display div.project_display_wrapper_ div.project_details {
+  height: 20%;
+  width: 100%;
+  border-radius: inherit;
+}
+
+div.main_page div.project_display div.project_display_wrapper_ div.project_details div.info {
+  height: 100%;
+  width: 50%;
+  background-color: green;
+  display: inline-block;
+}
+
+div.main_page div.project_display div.project_display_wrapper_ div.project_details div.stack {
+  height: 100%;
+  width: 50%;
+  background-color: yellow;
+  display: inline-block;
+  float: right;
+}
+
+div.main_page div.project_display div.project_display_wrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 div.main_page div.nav {
   background-color: #202124;
   height: 60px;
@@ -865,7 +922,13 @@ div.main_page div.project .works ul.project_ul li:nth-child(1) {
 }
 
 div.main_page div.project .works ul.project_ul li:nth-child(2) {
-  background-image: url("/images/joshuaicon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: grey;
+}
+
+div.main_page div.project .works ul.project_ul li:nth-child(3) {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -920,6 +983,21 @@ div.main_page div.project .works ul.project_ul li .pro_info .pro_info_temp .pro_
   transition: 1s;
   color: #22776A;
   background-color: white;
+}
+
+div.main_page div.project .works ul.project_ul:nth-child(2) {
+  text-align: left;
+}
+
+div.main_page div.project .works ul.project_ul:nth-child(2) li:nth-child(1) {
+  text-align: center;
+  margin-left: 9.5%;
+  background-image: url("/images/white.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  background-color: white;
+  border: 1px solid grey;
 }
 
 div.main_page div.project h1 {
@@ -1256,15 +1334,15 @@ div.main_page div.about div.skills .tech_skill .tech_list div.techs ul.list_two 
 }
 
 div.main_page div.about div.skills .tech_skill .tech_list div.techs ul.list_two li:nth-child(1) a {
-  color: #00d8ff;
+  color: #b52e31;
 }
 
 div.main_page div.about div.skills .tech_skill .tech_list div.techs ul.list_two li:nth-child(2) a {
   color: #44883e;
 }
 
-div.main_page div.about div.skills .tech_skill .tech_list div.techs ul.list_two li:nth-child(3) a {
-  color: #00758F;
+div.main_page div.about div.skills .tech_skill .tech_list div.techs ul.list_two li:nth-child(3) a img {
+  width: 105%;
 }
 
 div.main_page div.about div.skills .tech_skill .tech_list div.techs ul.list_two li:nth-child(4) a {
