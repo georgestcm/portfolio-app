@@ -656,6 +656,57 @@ div.main_page {
     }
   }}
 
+ div.project_display {
+   display: none;
+div.project_display_wrapper_ {
+  height: 86%;
+   width: 68%;
+   background-color: white;
+   position: fixed;
+   bottom: 6%;
+   left: 16%;
+   z-index: 222222222;
+   border-radius: 5px;
+   div.project_photos {
+     height: 80%;
+     width: 100%;
+     background-color: red;
+     border-radius: inherit;
+   }
+   div.project_details {
+     height: 20%;
+     width: 100%;
+     border-radius: inherit;
+     div.info {
+       height: 100%;
+       width: 50%;
+       background-color: green;
+       display: inline-block;
+     }
+     div.stack {
+       height: 100%;
+       width: 50%;
+       background-color: yellow;
+       display: inline-block;
+       float: right;
+     }
+   }
+}
+   div.project_display_wrapper {
+     height: 100%;
+     width: 100%;
+     position: fixed;
+     background-color: rgba(0,0,0,0.5);
+     top: 0;
+     bottom: 0;
+     z-index: 2;
+     opacity: 0.5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+   }
+ }
   div.nav {
     background-color: #202124;
     height: 60px;
@@ -778,13 +829,19 @@ div.main_page {
             border: 1px solid grey;
           }
           &:nth-child(2){
-            background-image: url("/images/joshuaicon.jpg");
+            //background-image: url("/images/joshuaicon.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
             background-color: grey;
           }
-
+          &:nth-child(3){
+          //  background-image: url("/images/joshuaicon.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            background-color: grey;
+          }
           .pro_info {
             height: 100%;
             width: 0%;
@@ -826,6 +883,23 @@ div.main_page {
                 }
               }}
             }
+          }
+        }
+        &:nth-child(2){
+          text-align: left;
+
+          li {
+            &:nth-child(1){
+              text-align: center;
+             margin-left: 9.5%;
+             background-image: url("/images/white.jpg");
+             background-repeat: no-repeat;
+             background-position: center;
+             background-size: 40%;
+             background-color: white;
+             border: 1px solid grey;
+            }
+
           }
         }
       }
@@ -1138,7 +1212,7 @@ div.main_page {
           }
           &:nth-child(1){
             a {
-              color:#00d8ff;
+              color:#b52e31;
             }
           }
         &:nth-child(2){
@@ -1148,7 +1222,10 @@ div.main_page {
         }
         &:nth-child(3){
           a {
-            color: #00758F;
+
+            img {
+             width: 105%;
+            }
           }
         }
         &:nth-child(4){
@@ -1219,6 +1296,8 @@ div.main_page {
   }
   }
 }
+
+
 
 //media queries
 
