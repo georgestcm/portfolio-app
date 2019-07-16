@@ -657,21 +657,78 @@ div.main_page {
   }}
 
  div.project_display {
+   transition: 1s;
    display: none;
 div.project_display_wrapper_ {
+  transition: 1s;
   height: 86%;
-   width: 68%;
+   width: 80%;
    background-color: white;
    position: fixed;
-   bottom: 6%;
+   bottom: 10%;
    left: 16%;
    z-index: 222222222;
    border-radius: 5px;
+   i.project_display_exit {
+     margin: 15px 15px 0 0;
+     position: fixed;
+     left: 94.3%;
+     top: 27px;
+     color: $main_color;
+     cursor: pointer;
+   }
    div.project_photos {
      height: 80%;
      width: 100%;
-     background-color: red;
      border-radius: inherit;
+     .left {
+       height: 100%;
+       width: 3%;
+       display: inline-block;
+       //background-color: red;
+       float: left;
+       i.project_display_left {
+       position: relative;
+       top: 50%;
+       font-size: 25px;
+       color: $main_color;
+       left: 10px;
+       cursor: pointer;
+       }
+
+     }
+     .right {
+       height: 100%;
+       width: 3%;
+       display: inline-block;
+       //background-color: blue;
+       float: right;
+       i.project_display_right {
+         position: relative;
+         top: 50%;
+         font-size: 25px;
+         color: $main_color;
+         left: 1px;
+         cursor: pointer;
+     }
+     }
+     .photo {
+       height: 98%;
+       width: 93.6%;
+       display: inline-block;
+      //background-color: brown;
+       text-align: center;
+        //border-left: 1px solid #80808030;
+         //border-right: 1px solid #80808030;
+       //border-radius: 5px;
+       position: relative;
+    top: 10px;
+       img {
+         height: inherit;
+         width: auto;
+         max-width: 93%;
+       }
+     }
    }
    div.project_details {
      height: 20%;
