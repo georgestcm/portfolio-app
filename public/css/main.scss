@@ -666,13 +666,13 @@ div.project_display_wrapper_ {
    background-color: white;
    position: fixed;
    bottom: 10%;
-   left: 16%;
+   left: 9%;
    z-index: 222222222;
    border-radius: 5px;
    i.project_display_exit {
      margin: 15px 15px 0 0;
      position: fixed;
-     left: 94.3%;
+     left: 87.3%;
      top: 27px;
      color: $main_color;
      cursor: pointer;
@@ -727,6 +727,7 @@ div.project_display_wrapper_ {
          height: inherit;
          width: auto;
          max-width: 93%;
+         border: 1px solid #80808024;
        }
      }
    }
@@ -893,10 +894,10 @@ div.project_display_wrapper_ {
             background-color: grey;
           }
           &:nth-child(3){
-          //  background-image: url("/images/joshuaicon.jpg");
+           background-image: url("/images/joshuaicon.jpg");
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 100%;
+            background-size: 130%;
             background-color: grey;
           }
           .pro_info {
@@ -1809,7 +1810,8 @@ div.landing_page {
     ul.project_ul {
       li {
         &:nth-child(3){
-          background-size: 50% 200px !important;
+          background-size: 100% !important;
+          background-color: #0D0D0D !important;
         }
       }
       &:nth-child(2){
